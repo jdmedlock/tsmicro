@@ -1,10 +1,12 @@
-var express = require('express')
-var app = express()
+const express = require("express");
+const url = require("url");
+const app = express();
 
-app.get('/', function (req, res) {
-  res.send('Hello World!')
-})
+app.get('/:TIMESTRING', function(request, response) {
+    const query = request.query;
+    response.send(request.params);
+});
 
-app.listen(8080, function () {
-  console.log('Example app listening on port 8080!')
-})
+app.listen(8080, function() {
+    console.log('Example app listening on port 8080!');
+});
