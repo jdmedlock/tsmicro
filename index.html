@@ -1,0 +1,54 @@
+<!--
+File Name: index.html
+Date: 01/22/2016
+Programmer: Jim Medlock
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Jim Medlock">
+    <meta name="subject" content="Timestamp Microservice">
+    <meta name="datecreated" content="20170122">
+    <meta name="datereviewed" content="20170122">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simon</title>
+
+    <!-- ALL CSS GOES IN THE META HEAD SECTION -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" integrity="sha256-uHu2MAd1LvCOVEAhvMld4LpJi7dUGS7GVzvG/5B3hlo=" crossorigin="anonymous" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+   <!-- Main webpage body -->
+   <div class="container-fluid">
+      <h1>API Basejump: Timestamp microservice</h1>
+      <h3>User stories:</h3>
+      <ol>
+         <li>I can pass a string as a parameter, and it will check to see whether that string contains either a unix timestamp or a natural language date (example: January 1, 2016)
+         </li>
+         <li>If it does, it returns both the Unix timestamp and the natural language form of that date.
+         </li>
+         <li>If it does not contain a date or Unix timestamp, it returns null for those properties.
+         </li>
+      </ol>
+      <h3>Example usage:</h3>
+      <ul>
+         <li><pre>https://timestamp-ms.herokuapp.com/December%2015,%202015</pre></li>
+         <li><pre>https://timestamp-ms.herokuapp.com/1450137600</pre></li>
+      </ul>
+      <h3>Example output:</h3>
+      <ul>
+         <li><pre>{ "unix": 1450137600, "natural": "December 15, 2015" }</pre></li>
+      </ul>
+   </div> <!-- end main webpage body -->
+
+   <!-- ALL JAVASCRIPT LINKS GOES RIGHT BEFORE THE ENDING BODY TAG -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+
+</html>
