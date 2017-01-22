@@ -11,9 +11,9 @@
     "url": "git+https://github.com/jdmedlock/tsmicro.git"
   },
   "keywords": [
-     "tsmicro",
-     "heroku"
-   ],
+    "tsmicro",
+    "heroku"
+  ],
   "author": "Jim Medlock",
   "license": "MIT",
   "bugs": {
@@ -22,9 +22,11 @@
   "homepage": "https://github.com/jdmedlock/tsmicro#readme",
   "dependencies": {
     "express": "^4.14.0",
-    "moment": "^2.17.1"
-   },
-   "engines": {
-       "node": "4.1.1"
-     }
+    "moment": "^2.17.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  },
+  "engines": {
+    "node": "4.1.1"
+  }
 }
