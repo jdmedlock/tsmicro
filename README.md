@@ -14,8 +14,8 @@ Implement the following users stories in this exercise.
 
 ##Example usage:
 ```
-https://timestamp-ms.herokuapp.com/December%2015,%202015
-https://timestamp-ms.herokuapp.com/1450137600
+https://powerful-tundra-83297.herokuapp.com/December%2015,%202015
+https://powerful-tundra-83297.herokuapp.com/1450137600
 ```
 ##Example output:
 ```
