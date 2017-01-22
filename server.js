@@ -18,7 +18,7 @@
 //
 // ##Example output:
 //    { "unix": 1450137600, "natural": "December 15, 2015" }
-
+"use strict";
 const express = require("express");
 const moment = require("moment");
 const path = require('path');
