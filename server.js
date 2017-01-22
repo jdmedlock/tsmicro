@@ -29,7 +29,7 @@ const app = express();
 // Express UI function(s)
 // -------------------------------------------------------------
 
-app.set('port', (process.env.PORT || 5000));
+app.set("port", (process.env.PORT || 5000));
 
 app.get("/", function(request, response) {
     response.sendFile(path.join(__dirname + "/index.html"));
@@ -49,8 +49,8 @@ app.get("/:TIMESTRING", function(request, response) {
     }));
 });
 
-app.listen(5000, function() {
-    console.log("Timestamp Microservice app listening on port 5000!");
+app.listen(app.get("port"), function() {
+    console.log("Timestamp Microservice app listening on port ", app.get("port"), "!");
 });
 
 
